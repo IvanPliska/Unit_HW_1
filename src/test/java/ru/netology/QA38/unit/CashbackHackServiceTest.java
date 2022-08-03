@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 
-class CashbackHackServiceTest {
+public class CashbackHackServiceTest {
 
     @Test
-    void shouldRemainToCashbackIfPrise800() {
+   public void shouldRemainToCashbackIfPrise800() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 800;
 
@@ -17,7 +17,7 @@ class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemainToCashbackIfPrise999() {
+   public void shouldRemainToCashbackIfPrise999() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 999;
 
@@ -27,7 +27,7 @@ class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemainToCashbackIfPrise1000() {
+   public void shouldRemainToCashbackIfPrise1000() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1000;
 
@@ -37,7 +37,7 @@ class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldRemainToCashbackIfPrise1001() {
+   public void shouldRemainToCashbackIfPrise1001() {
         CashbackHackService cashbackHackService = new CashbackHackService();
         int amount = 1001;
 
