@@ -1,10 +1,21 @@
 package ru.netology.QA38.unit;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class CashbackHackServiceTest {
+class CashbackHackServiceTestJupiter {
+
+    @Test
+    public void shouldRemainToCashbackIfPrise700() {
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int amount = 700;
+
+        int actual = cashbackHackService.remain(amount);
+        int expected = 300;
+
+        assertEquals(expected, actual);
+    }
 
     @Test
     public void shouldRemainToCashbackIfPrise800() {
